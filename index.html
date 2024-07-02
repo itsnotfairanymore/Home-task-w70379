@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>User Info Portal</h1>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" required>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+                <button type="button" id="clearData" class="clear-button">Clear Data</button>
+            </form>
+            <p id="articleMessage" class="hidden">Congratulations, you are more than 18 years old! Did you know that honey never spoils? Archaeologists have found pots of honey in ancient Egyptian tombs that are over 3,000 years old and still perfectly edible.</p>
+        </div>
+        <div class="user-list-section">
+            <h2>User List:</h2>
+            <div id="userGrid" class="grid-container">
+                <div class="grid-header">First Name</div>
+                <div class="grid-header">Last Name</div>
+                <div class="grid-header">Age</div>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <button id="sortFirstName">Sort by First Name</button>
+        <button id="sortLastName">Sort by Last Name</button>
+        <button id="sortAge">Sort by Age</button>
+    </div>
+    <footer>
+        <p>Created by Kateryna Popkova, ID number W70379</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
